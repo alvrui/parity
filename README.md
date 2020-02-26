@@ -5,7 +5,7 @@ The Dockerfile has ISSUE 4978. The advised solutions didn't solved the problem.
 let mem = buf.unchecked_ref::<WebAssembly::Memory>();
      |                                                            ^^^^^^ this struct is private
      
-always compiling js-sys
+always while compiling js-sys
 
 Check the working environment by pulling the image lvrrz/substrate-ok built using the tasks described in the Dockerfile.
 docker image pull lvrrz/substrate-ok:latest
