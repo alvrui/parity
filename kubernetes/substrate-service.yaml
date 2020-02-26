@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+Kind: Service
+metadata:
+        name: substrate-service
+        labels:
+                run: substrate
+spec:
+        type: NodePort
+        ports:
+        - port:30333
+        targetPort: 30333
+        protocol: TCP
+        name: substrate
+        selector:
+                app: substrate
+

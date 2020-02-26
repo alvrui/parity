@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+Kind: Deployment
+metadata:
+        name: substrate
+        labels:
+                app: substrate
+spec:
+        replicas: 1
+        selector:
+                matchLabels:
+                        app: substrate
+        template:
+                metadata:
+                        labels:
+                                app: substrate
+                specs:
+                        containers:
+                        -name: substrate
+                        image: lvrrz/substrate-ok:latest
+                        ports:
+                        -containerPort: 30333
