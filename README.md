@@ -18,6 +18,4 @@ it gets monitored in:
 https://telemetry.polkadot.io/#/Flaming%20Fir
 
 Kubernetes
-I was not able to solve a problem with vm-driver in kubernetes locally where docker, none (both said unsupported) and virtualbox (cannot find vboxmanage, this one got me lost) were not working when starting it up, so in that part I failed completely.
-I have included nevertheless 2 files I was preparing while installing OS in the VMs. Dunno, just for reading I guess as  they are not tested.
-
+Issue with vm-driver in kubernetes locally where docker, none (both unsupported) and virtualbox (cannot find vboxmanage, this one got me lost) were not working when starting it up.
